@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class ContactCreationTest {
+public class ContactCreationTest extends TestBase {
     private WebDriver driver;
 
 
@@ -42,7 +42,7 @@ public class ContactCreationTest {
         driver.findElement(By.name("address")).click();
         driver.findElement(By.name("address")).clear();
         driver.findElement(By.name("address")).sendKeys("ramat gan");
-        
+
         driver.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
     }
 

@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
@@ -97,6 +97,44 @@ public class TestBase {
     }
 
     public void confirmGroupModification() {
-        driver.findElement(By.name("update"));
+        driver.findElement(By.name("update")).click();
+    }
+
+    public void submitContactCreation() {
+        driver.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
+    }
+
+    public void fillContactForm(String firstName, String lastName, String address) {
+        driver.findElement(By.name("firstname")).click();
+        driver.findElement(By.name("firstname")).clear();
+        driver.findElement(By.name("firstname")).sendKeys(firstName);
+
+        driver.findElement(By.name("lastname")).click();
+        driver.findElement(By.name("lastname")).clear();
+        driver.findElement(By.name("lastname")).sendKeys(lastName);
+
+        driver.findElement(By.name("address")).click();
+        driver.findElement(By.name("address")).clear();
+        driver.findElement(By.name("address")).sendKeys(address);
+    }
+
+    public void initContactCreation() {
+        driver.findElement(By.linkText("add new")).click();
+    }
+
+    protected void acceptAlert() {
+        driver.switchTo().alert().accept();
+    }
+
+    protected void returnToHomePage() {
+        driver.findElement(By.linkText("home")).click();
+    }
+
+    protected void submitContactDeletion() {
+        driver.findElement(By.xpath("//input[@value='Delete']")).click();
+    }
+
+    protected void selectContact() {
+        driver.findElement(By.name("selected[]")).click();
     }
 }

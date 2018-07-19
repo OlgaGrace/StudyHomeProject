@@ -1,22 +1,19 @@
+package com.tr.example;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
+public class ApplicationManager {
     public WebDriver driver;
 
-    @BeforeClass(alwaysRun = true)
-    public void setUp() throws Exception {
+    public void start() {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        openSite("http://localhost/addressbook/index.php");
-        loginSite("admin", "secret");
     }
 
     public void returnToGroupPage() {
@@ -27,18 +24,18 @@ public class TestBase {
         driver.findElement(By.name("submit")).click();
     }
 
-    public void fillGroupForm(String name, String header, String footer) {
+    public void fillGroupForm(GroupData group) {
         driver.findElement(By.name("group_name")).click();
         driver.findElement(By.name("group_name")).clear();
-        driver.findElement(By.name("group_name")).sendKeys(name);
+        driver.findElement(By.name("group_name")).sendKeys(group.getName());
         //fill group form header
         driver.findElement(By.name("group_header")).click();
         driver.findElement(By.name("group_header")).clear();
-        driver.findElement(By.name("group_header")).sendKeys(header);
+        driver.findElement(By.name("group_header")).sendKeys(group.getHeader());
         //fill group form footer
         driver.findElement(By.name("group_footer")).click();
         driver.findElement(By.name("group_footer")).clear();
-        driver.findElement(By.name("group_footer")).sendKeys(footer);
+        driver.findElement(By.name("group_footer")).sendKeys(group.getFooter());
     }
 
     public void initGroupCreation() {
@@ -62,19 +59,21 @@ public class TestBase {
     public void openSite(String url) {
         driver.get(url);
     }
+
     public void selectFirstGroup() {
         driver.findElement(By.name("selected[]")).click();
 
     }
+
     public void deleteGroup() {
         driver.findElement(By.name("delete")).click();
     }
+
     public void initGroupModification() {
     driver.findElement(By.name("edit")).click();
     }
 
-    @AfterClass(alwaysRun = true)
-    public void tearDown() throws Exception {
+    public void stop() {
         driver.quit();
     }
 
@@ -104,18 +103,18 @@ public class TestBase {
         driver.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
     }
 
-    public void fillContactForm(String firstName, String lastName, String address) {
+    public void fillContactForm(ContactData contact) {
         driver.findElement(By.name("firstname")).click();
         driver.findElement(By.name("firstname")).clear();
-        driver.findElement(By.name("firstname")).sendKeys(firstName);
+        driver.findElement(By.name("firstname")).sendKeys(contact.getFirstName());
 
         driver.findElement(By.name("lastname")).click();
         driver.findElement(By.name("lastname")).clear();
-        driver.findElement(By.name("lastname")).sendKeys(lastName);
+        driver.findElement(By.name("lastname")).sendKeys(contact.getLastName());
 
         driver.findElement(By.name("address")).click();
         driver.findElement(By.name("address")).clear();
-        driver.findElement(By.name("address")).sendKeys(address);
+        driver.findElement(By.name("address")).sendKeys(contact.getAddress());
     }
 
     public void initContactCreation() {
@@ -136,5 +135,13 @@ public class TestBase {
 
     protected void selectContact() {
         driver.findElement(By.name("selected[]")).click();
+    }
+
+    public int getGroupCount() {
+        return driver.findElements(By.name("selected[]")).size();
+    }
+
+    public int getContactCount() {
+    return driver.findElements(By.name("selected[]")).size();
     }
 }

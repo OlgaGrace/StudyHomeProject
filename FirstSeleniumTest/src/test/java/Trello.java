@@ -34,7 +34,7 @@ public class Trello {
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.id("password")).sendKeys("1984%Ladida");
     // confirm login
-    driver.findElement(By.id("login")).click();
+    driver.findElement(By.xpath("//input[@id='login']")).click();
   }
 
   @AfterClass(alwaysRun = true)

@@ -1,4 +1,4 @@
-package com.tr.example;
+package com.tr.example.model;
 
 public class GroupData {
     private final String name;

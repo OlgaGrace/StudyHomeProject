@@ -1,5 +1,6 @@
-package com.tr.example;
+package com.tr.example.tests;
 
+import com.tr.example.appManager.ApplicationManager;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -10,8 +11,7 @@ public class TestBase {
     @BeforeClass(alwaysRun = true)
     public void setUp()  {
         app.start();
-        app.openSite("http://localhost/addressbook/index.php");
-        app.loginSite("admin", "secret");
+
     }
 
     @AfterClass(alwaysRun = true)

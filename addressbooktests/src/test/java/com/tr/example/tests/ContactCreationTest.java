@@ -1,5 +1,6 @@
-package com.tr.example;
+package com.tr.example.tests;
 
+import com.tr.example.model.ContactData;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;

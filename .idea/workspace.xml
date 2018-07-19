@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24879185-8747-4959-98d9-be2fb083706f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/ContactCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/ContactDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactDeletionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/GroupCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/GroupDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupDeletionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/GroupModificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupModificationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactDeletionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactDeletionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/FirstSeleniumTest/.gradle/" />
     <ignored path="$PROJECT_DIR$/FirstSeleniumTest/build/" />
@@ -64,35 +57,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="405">
+              <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2101#2102#0" expanded="true" />
                 <element signature="e#2132#2133#0" expanded="true" />
                 <element signature="e#2454#2455#0" expanded="true" />
                 <element signature="e#2483#2484#0" expanded="true" />
-                <element signature="e#3048#3049#0" expanded="true" />
-                <element signature="e#3132#3133#0" expanded="true" />
-                <element signature="e#3822#3823#0" expanded="true" />
-                <element signature="e#3888#3889#0" expanded="true" />
                 <element signature="e#3924#3925#0" expanded="true" />
                 <element signature="e#3974#3975#0" expanded="true" />
                 <element signature="e#4015#4016#0" expanded="true" />
                 <element signature="e#4078#4079#0" expanded="true" />
-                <element signature="e#4124#4125#0" expanded="true" />
-                <element signature="e#4204#4205#0" expanded="true" />
-                <element signature="e#4242#4243#0" expanded="true" />
-                <element signature="e#4307#4308#0" expanded="true" />
-                <element signature="e#4449#4450#0" expanded="true" />
-                <element signature="e#4517#4518#0" expanded="true" />
                 <element signature="e#3273#3274#0" expanded="true" />
                 <element signature="e#3307#3308#0" expanded="true" />
                 <element signature="e#3484#3485#0" expanded="true" />
                 <element signature="e#3523#3524#0" expanded="true" />
+                <element signature="e#2321#2322#0" expanded="true" />
+                <element signature="e#2357#2358#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ContactHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1130#1131#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +110,8 @@
       <file leaf-file-name="NavigationHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/NavigationHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state>
+              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -140,15 +149,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/model/ContactData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GroupData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/model/GroupData.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -176,7 +176,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactCreationTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContactCreationTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -628,10 +628,11 @@
         <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupModificationTest.java" />
         <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/GroupHelper.java" />
-        <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupCreationTest.java" />
         <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupDeletionTest.java" />
+        <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ContactHelper.java" />
       </list>
     </option>
   </component>
@@ -735,7 +736,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTest.testGroupCreation">
+  <component name="RunManager" selected="TestNG.ContactCreationTest.testContactCreation">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -913,8 +914,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupCreationTest.testGroupCreation" />
         <item itemvalue="TestNG.ContactCreationTest.testContactCreation" />
+        <item itemvalue="TestNG.GroupCreationTest.testGroupCreation" />
         <item itemvalue="TestNG.Trello.testTrello" />
         <item itemvalue="TestNG.ContactDeletionTest" />
         <item itemvalue="TestNG.ContactCreationTest" />
@@ -1004,13 +1005,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FirstSeleniumTest/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="3" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbooktests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1328,16 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -1364,18 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/GroupCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1390,34 +1362,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/NavigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="405">
+          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2101#2102#0" expanded="true" />
             <element signature="e#2132#2133#0" expanded="true" />
             <element signature="e#2454#2455#0" expanded="true" />
             <element signature="e#2483#2484#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3132#3133#0" expanded="true" />
-            <element signature="e#3822#3823#0" expanded="true" />
-            <element signature="e#3888#3889#0" expanded="true" />
             <element signature="e#3924#3925#0" expanded="true" />
             <element signature="e#3974#3975#0" expanded="true" />
             <element signature="e#4015#4016#0" expanded="true" />
             <element signature="e#4078#4079#0" expanded="true" />
-            <element signature="e#4124#4125#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4242#4243#0" expanded="true" />
-            <element signature="e#4307#4308#0" expanded="true" />
-            <element signature="e#4449#4450#0" expanded="true" />
-            <element signature="e#4517#4518#0" expanded="true" />
             <element signature="e#3273#3274#0" expanded="true" />
             <element signature="e#3307#3308#0" expanded="true" />
             <element signature="e#3484#3485#0" expanded="true" />
             <element signature="e#3523#3524#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2357#2358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/appManager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbooktests/src/test/java/com/tr/example/tests/ContactCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

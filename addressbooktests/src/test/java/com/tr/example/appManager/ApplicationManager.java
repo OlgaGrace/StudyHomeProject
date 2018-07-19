@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+    private ContactHelper contactHelper;
     private GroupHelper groupHelper;
     private NavigationHelper navigationHelper;
     public WebDriver driver;
@@ -24,6 +25,7 @@ public class ApplicationManager {
         loginSite("admin", "secret");
         groupHelper = new GroupHelper(driver);
         navigationHelper = new NavigationHelper(driver);
+        contactHelper = new ContactHelper(driver);
     }
 
 
@@ -63,28 +65,6 @@ public class ApplicationManager {
         }
     }
 
-    public void submitContactCreation() {
-        driver.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
-    }
-
-    public void fillContactForm(ContactData contact) {
-        driver.findElement(By.name("firstname")).click();
-        driver.findElement(By.name("firstname")).clear();
-        driver.findElement(By.name("firstname")).sendKeys(contact.getFirstName());
-
-        driver.findElement(By.name("lastname")).click();
-        driver.findElement(By.name("lastname")).clear();
-        driver.findElement(By.name("lastname")).sendKeys(contact.getLastName());
-
-        driver.findElement(By.name("address")).click();
-        driver.findElement(By.name("address")).clear();
-        driver.findElement(By.name("address")).sendKeys(contact.getAddress());
-    }
-
-    public void initContactCreation() {
-        driver.findElement(By.linkText("add new")).click();
-    }
-
     public void acceptAlert() {
         driver.switchTo().alert().accept();
     }
@@ -93,23 +73,15 @@ public class ApplicationManager {
         driver.findElement(By.linkText("home")).click();
     }
 
-    public void submitContactDeletion() {
-        driver.findElement(By.xpath("//input[@value='Delete']")).click();
-    }
-
-    public void selectContact() {
-        driver.findElement(By.name("selected[]")).click();
-    }
-
-    public int getContactCount() {
-    return driver.findElements(By.name("selected[]")).size();
-    }
-
     public GroupHelper getGroupHelper() {
         return groupHelper;
     }
 
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
+    }
+
+    public ContactHelper getContactHelper() {
+        return contactHelper;
     }
 }

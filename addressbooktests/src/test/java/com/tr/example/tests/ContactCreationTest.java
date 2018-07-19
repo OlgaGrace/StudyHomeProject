@@ -13,20 +13,20 @@ public class ContactCreationTest extends TestBase {
     @Test
     public void testContactCreation() throws Exception {
 
-        int before = app.getContactCount();
-        app.initContactCreation();
-        app.fillContactForm(new ContactData("OlgaHome", "SelyavinaHome", "ramat gan"));
-        app.submitContactCreation();
-        int after = app.getContactCount();
+        int before = app.getContactHelper().getContactCount();
+        app.getContactHelper().initContactCreation();
+        app.getContactHelper().fillContactForm(new ContactData("OlgaHome", "SelyavinaHome", "ramat gan"));
+        app.getContactHelper().submitContactCreation();
+        int after = app.getContactHelper().getContactCount();
         Assert.assertEquals(after, before+1);
     }
 
     @Test
     public void testContactCreation2() throws Exception {
 
-        app.initContactCreation();
-        app.fillContactForm(new ContactData("OlgaHome2", "SelyavinaHome2", "ramat gan2"));
-        app.submitContactCreation();
+        app.getContactHelper().initContactCreation();
+        app.getContactHelper().fillContactForm(new ContactData("OlgaHome2", "SelyavinaHome2", "ramat gan2"));
+        app.getContactHelper().submitContactCreation();
     }
 }
 

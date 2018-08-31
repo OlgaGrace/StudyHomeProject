@@ -1,3 +1,5 @@
+import org.gradle.api.tasks.testing.Test
+
 plugins {
     id 'java'
 }
@@ -16,4 +18,16 @@ dependencies {
     compile 'org.seleniumhq.selenium:selenium-java:3.13.0'
     compile 'org.testng:testng:6.14.3'
 
+}
+
+task testGroups(type:Test){
+    useTestNG{
+    suites 'src/test/resources/testng-groups.xml'
+    }
+}
+
+task testContacts(type:Test){
+    useTestNG{
+        suites 'src/test/resources/testng-contacts.xml'
+    }
 }

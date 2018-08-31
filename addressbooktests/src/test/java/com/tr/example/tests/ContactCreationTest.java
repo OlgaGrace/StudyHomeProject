@@ -12,11 +12,16 @@ public class ContactCreationTest extends TestBase {
 
     @Test
     public void testContactCreation() throws Exception {
+        app.getNavigationHelper().goToHomePage();
 
         int before = app.getContactHelper().getContactCount();
         app.getContactHelper().initContactCreation();
-        app.getContactHelper().fillContactForm(new ContactData("OlgaHome", "SelyavinaHome", "ramat gan"));
+        app.getContactHelper().fillContactForm(new ContactData()
+                .withFirstName("OlgaHome")
+                .withLastName("SelyavinaHome")
+                .withAddress("ramat gan"));
         app.getContactHelper().submitContactCreation();
+
         int after = app.getContactHelper().getContactCount();
         Assert.assertEquals(after, before+1);
     }
@@ -25,7 +30,10 @@ public class ContactCreationTest extends TestBase {
     public void testContactCreation2() throws Exception {
 
         app.getContactHelper().initContactCreation();
-        app.getContactHelper().fillContactForm(new ContactData("OlgaHome2", "SelyavinaHome2", "ramat gan2"));
+        app.getContactHelper().fillContactForm(new ContactData()
+                .withFirstName("OlgaHome2")
+                .withLastName("SelyavinaHome2")
+                .withAddress("ramat gan2"));
         app.getContactHelper().submitContactCreation();
     }
 }

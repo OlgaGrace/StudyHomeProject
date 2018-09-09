@@ -1,0 +1,6 @@
+2932 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+7916 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+7916 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+12749 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+12750 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+17866 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation

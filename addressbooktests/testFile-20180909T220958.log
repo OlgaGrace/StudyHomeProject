@@ -1,0 +1,6 @@
+3371 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+8275 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+8276 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+12871 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+12871 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+17503 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation

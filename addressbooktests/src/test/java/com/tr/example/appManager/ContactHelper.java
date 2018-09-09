@@ -21,8 +21,8 @@ public class ContactHelper extends HelperBase{
         type(By.name("firstname"), contact.getFirstName());
         type(By.name("lastname"), contact.getLastName());
         type(By.name("address"), contact.getAddress());
-        attach(By.name("photo"), contact.getPhoto());
-        new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
+      //  attach(By.name("photo"), contact.getPhoto());
+     //   new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
     }
 
 

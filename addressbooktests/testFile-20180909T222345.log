@@ -1,0 +1,6 @@
+5017 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+10140 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+10141 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+15023 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+15029 [main] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+19924 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation

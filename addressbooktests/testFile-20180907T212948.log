@@ -1,0 +1,2 @@
+3239 [main] INFO  c.t.example.tests.GroupCreationTest - Start testGroupDeletionByIndex
+5500 [main] INFO  c.t.example.tests.GroupCreationTest - Stop testGroupDeletionByIndex

@@ -3,6 +3,7 @@ package com.tr.example.appManager;
 import com.tr.example.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ContactHelper extends HelperBase{
 
@@ -20,7 +21,11 @@ public class ContactHelper extends HelperBase{
         type(By.name("firstname"), contact.getFirstName());
         type(By.name("lastname"), contact.getLastName());
         type(By.name("address"), contact.getAddress());
+        attach(By.name("photo"), contact.getPhoto());
+        new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
     }
+
+
 
     public void initContactCreation() {
         click(By.linkText("add new"));

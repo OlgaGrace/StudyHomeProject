@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 public class ContactCreationTest extends TestBase {
     private WebDriver driver;
 
@@ -16,10 +18,13 @@ public class ContactCreationTest extends TestBase {
 
         int before = app.getContactHelper().getContactCount();
         app.getContactHelper().initContactCreation();
+        File photo = new File("src/test/resources/photo.jpeg");
         app.getContactHelper().fillContactForm(new ContactData()
-                .withFirstName("OlgaHome")
+                .withFirstName("OlgaHomePicGroup")
                 .withLastName("SelyavinaHome")
-                .withAddress("ramat gan"));
+                .withAddress("ramat gan")
+                .withPhoto(photo)
+                .withGroup("fluentNameModif"));
         app.getContactHelper().submitContactCreation();
 
         int after = app.getContactHelper().getContactCount();
@@ -28,12 +33,15 @@ public class ContactCreationTest extends TestBase {
 
     @Test
     public void testContactCreation2() throws Exception {
-
+        app.getNavigationHelper().goToHomePage();
         app.getContactHelper().initContactCreation();
+        File photo = new File("src/test/resources/photo.jpeg");
         app.getContactHelper().fillContactForm(new ContactData()
                 .withFirstName("OlgaHome2")
                 .withLastName("SelyavinaHome2")
-                .withAddress("ramat gan2"));
+                .withAddress("ramat gan2")
+        .withPhoto(photo)
+        .withGroup("fluentNameModif"));
         app.getContactHelper().submitContactCreation();
     }
 }

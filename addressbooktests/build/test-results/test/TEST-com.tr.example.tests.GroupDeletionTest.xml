@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tr.example.tests.GroupDeletionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-31T17:09:23" hostname="Olgas-MacBook-Pro.local" time="0.488">
-  <properties/>
-  <testcase name="testGroupDeletion" classname="com.tr.example.tests.GroupDeletionTest" time="0.488"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

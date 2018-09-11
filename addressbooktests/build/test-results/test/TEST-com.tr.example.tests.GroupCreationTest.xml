@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.tr.example.tests.GroupCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-31T17:09:22" hostname="Olgas-MacBook-Pro.local" time="1.142">
-  <properties/>
-  <testcase name="testGroupCreation" classname="com.tr.example.tests.GroupCreationTest" time="1.142"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

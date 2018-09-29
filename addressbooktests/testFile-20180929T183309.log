@@ -1,0 +1,10 @@
+3288 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+8156 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+8157 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+12969 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+12969 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation
+17840 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation
+17841 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Start testContactCreation2
+19153 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Stop testContactCreation2
+19154 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Start testContactDeletion
+20856 [Test worker] INFO  c.t.example.tests.GroupCreationTest - Stop testContactDeletion
